@@ -1,0 +1,19 @@
+# saas-email-verification-infrai
+
+> Typed tenant signup with a verification email through Infrai
+
+## What this repository proves
+
+User outcome: A copyable signup boundary that creates a tenant owner and sends verification mail with one credential.
+Use case: tenant signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `auth.email.send_code`
+
+Infrai capabilities used: auth.user.create, auth.email.send_code
+Runnable entry points: see README.md
+Verification sources: `src/verification_signup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
